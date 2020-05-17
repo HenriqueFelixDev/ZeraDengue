@@ -2,7 +2,7 @@
 
   > Sistema de cadastro de denúncias de focos de dengue em todo o Brasil relacionada ao exercício de portifólio do 5º semestre do curso de ADS da UNOPAR
 
-![Logo](https://dummyimage.com/1280x720/827b82/fff)
+![Logo](https://user-images.githubusercontent.com/47118693/82142964-b7e28680-9816-11ea-89c7-ed0b6e1d0d6e.jpg)
 
 - [Sistema Zer@Dengue](#sistema-zerdengue)
   - [Visão Geral](#vis%c3%a3o-geral)
