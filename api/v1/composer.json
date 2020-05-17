@@ -1,0 +1,27 @@
+{
+    "name": "henriquefelixdev/zera-dengue-api",
+    "version": "1.0.0",
+    "description": "API para acesso aos dados do sistema de denúncias de focos de dengue para o portifólio do 5º semestre do curso de ADS da Unopar",
+    "authors": [
+        {
+            "name": "HenriqueFelixDev",
+            "email": "henriquefelixdev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor/"
+    },
+    "autoload": {
+        "files": [
+            "App/Config.php"
+        ],
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "require": {
+        "pecee/simple-router": "4.2.0.6",
+        "lcobucci/jwt": "^3.3"
+    }
+}

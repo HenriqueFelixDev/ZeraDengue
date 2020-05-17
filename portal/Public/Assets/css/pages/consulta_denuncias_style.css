@@ -1,0 +1,34 @@
+.complaint-items td.subject, .complaint-items td.local {
+    height: 20px;
+    max-width: 300px;
+}
+
+.complaint-items td.local {
+    height: 20px;
+    max-width: 200px;
+}
+
+table.complaint-items {
+    border-collapse: separate;
+    border-spacing: 0 15pt;
+}
+
+table.complaint-items tr.card{
+    display: table-row;
+    cursor: pointer;
+}
+
+table.complaint-items tr.card:hover{
+    filter: contrast(0.8)
+}
+
+.complaint-items tbody td:first-child {
+    font-weight: bold;
+}
+
+.complaint-items td {
+    padding: 15pt 10pt;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

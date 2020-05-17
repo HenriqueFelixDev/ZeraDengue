@@ -1,0 +1,51 @@
+.article-item-wrapper {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.article-item {
+    height: 200pt;
+    border-radius: 5pt;
+    transition: transform .2s linear;
+}
+
+.article-item-wrapper a {
+    display: block;
+    position: relative;
+}
+
+.article-item-wrapper h2 {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding: 5% 10pt 3pt;
+    border-radius: 5pt;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    color: white;
+    font-size: 16pt;
+    text-shadow: 2pt 2pt 3pt rgba(0, 0, 0, 0.5);
+}
+
+#art1 {
+    background: url(https://i.ytimg.com/vi/HRN97yV-ROM/hqdefault.jpg) center center/cover;
+}
+
+#art2 {
+    background: url(https://midias.agazeta.com.br/2019/11/01/mosquito-aedes-aegypti-responsavel-pela-transmissao-dos-virus-da-dengue-febre-chikungunya-e-zika--91461.jpg) no-repeat center center/cover;
+}
+
+#art3 {
+    background: url('https://s2.glbimg.com/hlh_jDCmIyZOWWV5GXv9rsrjJtA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/F/M/T7UqFERGWPSITfFvJVHw/foto-materia-sobre-dengue-1-.png') center center/cover no-repeat;
+}
+
+.article-item-wrapper:hover .article-item {
+    transform: scale(1.05);
+    transition: transform .2s ease-out;
+}
+
+@media (max-width: 960px) {
+    .article-item-wrapper h2 {
+        font-size: 14pt;
+    }
+}

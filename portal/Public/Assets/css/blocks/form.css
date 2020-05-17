@@ -1,0 +1,55 @@
+label {
+    font: bold normal 12pt Verdana;
+    display: block;
+    margin: 5pt;
+}
+
+input, select, textarea {
+    margin: 5pt 0;
+    padding: 8pt;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3pt;
+    border: thin solid #999;
+    display: block;
+    font: normal 13pt Arial;
+    transition: border,box-shadow .2s linear;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: thin solid #3e89c1;
+    box-shadow: 0pt 0pt 2pt #3e89c1 inset;
+    transition: border,box-shadow .2s linear;
+}
+
+input[type=radio], input[type=checkbox], input[type=color] {
+    display: inline;
+    padding: 4pt;
+}
+
+.form-inline {
+    margin: 5pt;
+}
+
+.form-inline label {
+    font: 400 normal 12pt Verdana;
+    display: inline;
+}
+
+.text-decorated {
+    position: relative;
+}
+
+
+.text-decorated input {
+    padding-right: 30px;
+}
+
+.text-decorated button {
+    box-shadow: none;
+    padding: 13px 15px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border-radius: 0 3pt 3pt 0;
+}

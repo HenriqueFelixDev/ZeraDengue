@@ -1,0 +1,26 @@
+{
+    "name": "henriquefelixdev/zera-dengue-portal",
+    "version": "1.0.0",
+    "description": "Portal para cadastro de denúncias de focos de dengue usado como portifólio no curso de ADS da Unopar",
+    "authors": [
+        {
+            "name": "HenriqueFelixDev",
+            "email": "henriquefelixdev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor/"
+    },
+    "require": {
+        "pecee/simple-router": "4.2.0.6",
+        "twig/twig": "^3.0",
+        "symfony/asset": "^5.0",
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}

@@ -1,0 +1,65 @@
+.btn, button {
+    background-color: #eee;
+    border: none;
+    border-radius: 3pt;
+    padding: 10pt 20pt;
+    font: bold 10pt Verdana;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 2pt 2pt 3pt #777;
+    transition: opacity,color,box-shadow .3s ease-out;
+}
+
+.btn:not(.btn-disabled):hover, button:not(.btn-disabled):hover {
+    opacity: 0.8;
+    transition: opacity,color,box-shadow .2s ease-out;
+    text-decoration: none;
+}
+
+.btn:not(.btn-disabled):active, button:not(.btn-disabled):active {
+    opacity: 0.5;
+    color: #555;
+    box-shadow: 1pt 1pt 2pt #777;
+    transition: opacity,color,box-shadow .2s ease-out;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-mini {
+    padding: 7pt 14pt;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3E89C1;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #FF7D39;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #da2d2d;
+}
+
+.btn-disabled {
+    background-color: #bbb;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.btn-flat {
+    background-color: transparent;
+    color: #000;
+    padding: 0;
+    font-size: 12pt;
+}
+
+.btn-remove-phone {
+    margin: 5pt 0;
+}

@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mirza&display=swap');
+
+.fullscreen {
+    min-height: 80vh;
+}
+
+header.app-bar {
+    /*background-color: #F6AE2D;*/
+    background-color: #06AC9D;
+    box-shadow: 0pt 3pt 2pt rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10pt 100pt;
+    margin-bottom: 10pt;
+    overflow: visible;
+}
+
+.app-bar .logo {
+    display: inline-block;
+    font: 500 18pt 'Comic Neue';
+}
+
+.app-bar .logo *{
+    vertical-align: text-bottom;
+}
+
+.app-bar a, .footer-bar a {
+    color: white;
+}
+
+.app-bar nav.menu li, .footer-bar nav.menu li {
+    list-style: none;
+}
+
+.app-bar nav {
+    float: right;
+}
+
+header nav.menu li {
+    float: left;
+    display: block;
+    min-width: 40px;
+    padding: 0 5pt;
+}
+
+nav.menu li a {
+    font: 700 12pt Verdana;
+}
+
+nav.menu li a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+nav.menu li ul {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    max-width: 160px;
+    /*background-color: rgb(197, 136, 23);*/
+    background-color: rgb(14, 89, 92);
+    border-radius: 3pt;
+}
+
+li .arrow {
+    transition: transform .2s linear;
+}
+
+li:hover .arrow {
+    transform: rotate(180deg);
+    transition: transform .2s linear;
+}
+
+nav.menu li:hover>ul {
+    display: block;
+}
+
+nav.menu li ul li {
+    padding: 5pt 10pt;
+    width: 100%;
+}
+
+nav.menu li ul li:hover {
+    /*background-color: rgb(211, 156, 55);*/
+    background-color: rgb(42, 143, 146);
+}
+
+body>footer {
+    background-color: #1E252F;
+    padding: 20pt 40pt;
+}
+
+footer .footer-bar {
+    /*background-color: #2F4858;*/
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.footer-bar h2 {
+    font-size: 12pt;
+    color: #646262;
+    border-bottom: thin dotted #555;
+}
+
+.footer-bar .menu a {
+    font-size: 10pt;
+}
+
+footer .copyright {
+    border-top: thin solid #333;
+    margin-top: 5pt;
+    padding-top: 5pt;
+    text-align: center;
+    color: #ccc;
+}
+
+.container {
+    margin: 30pt auto;
+}
+
+.custom-container {
+    margin: 30pt auto;
+    width: 60%;
+}
+
+.title {
+    font: 600 16pt Verdana;
+    color: #222;
+}
+
+.subtitle {
+    font: 600 13pt Verdana;
+    color: #555;
+}
+
+.hint {
+    color: #777;
+    font: 500 10pt Verdana;
+}
+
+.pagination {
+    display: table;
+    border-spacing: 1px 0;
+    margin: 5pt auto;
+}
+
+.pagination-item {
+    display: table-cell;
+    padding: 5pt 10pt;
+    border-radius: 3px;
+    background-color: rgb(245, 171, 131);
+    color: white;
+    font-weight: bold;
+}
+
+.pagination-item:hover {
+    text-decoration: none;
+}
+
+.pagination-item.disable {
+    background-color: transparent;
+    color: black;
+    font-weight: normal;
+    cursor: default;
+}
+
+.message {
+    display: block;
+    border-radius: 5px;
+    padding: 5pt 10pt;
+    margin: 5pt 0;
+}
+
+.error-message {
+    background-color: rgb(255, 127, 133);
+    color: rgb(121, 15, 11);
+}
+
+.success-message {
+    background-color: aquamarine;
+    color: rgb(11, 121, 35);
+}
+
+.comment {
+    margin: 10pt 0;
+    padding: 10pt;
+    border-top: thin solid #ccc;
+    border-bottom: thin solid #ccc;
+}
+
+.card {
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 1pt 1.5pt 3pt rgba(0, 0, 0, 0.5);
+    padding: 15pt;
+    border-radius: 2pt;
+}
+
+.ship {
+    display: inline-block;
+    background-color: #FF7D39;
+    color: white;
+    font: 600 9pt Verdana;
+    border: none;
+    border-radius: 20pt;
+    padding: 4pt 10pt;
+    margin: 4pt 0;
+}
+
+.modal-container {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-hide {
+    display: none;
+}
+
+.modal {
+    position: relative;
+    background-color: white;
+    border: thin solid #dedede;
+    border-radius: 5px;
+    padding: 5pt 10pt;
+    font: normal 16pt Catamaran;
+}
+
+.modal .content {
+    padding: 5pt 10pt;
+}
+
+.modal header {
+    font: bold 12pt Catamaran;
+}
+
+.modal header .btn-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 0;
+    box-shadow: none;
+    font-size: 16pt;
+    color: #da2d2d;
+    background-color: transparent;
+}
+
+.modal footer {
+    border-top: thin solid #dedede;
+    padding-top: 10pt;
+    text-align: right;
+}
+
+.responsive-table {
+    overflow-x: auto;
+}
+
+.vertical-spacer {
+    height: 10pt;
+    width: 100%;
+}
+
+.vertical-spacer-2x {
+    height: 18pt;
+    width: 100%;
+}
+
+.vertical-spacer-3x {
+    height: 25pt;
+    width: 100%;
+}
+
+.horizontal-spacer {
+    height: 100%;
+    width: 10pt;
+}
+
+.horizontal-spacer-2x {
+    height: 100%;
+    width: 18pt;
+}
+
+.horizontal-spacer-3x {
+    height: 100%;
+    width: 25pt;
+}
+
+@media (max-width: 768px) {
+    .custom-container {
+        width: 75%;
+    }
+}

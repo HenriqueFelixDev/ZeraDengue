@@ -1,0 +1,18 @@
+body{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../../img/lixo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+                     
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    body{
+        background-image: url();
+        background-color: white;
+    }
+}
